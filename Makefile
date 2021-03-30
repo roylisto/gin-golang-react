@@ -1,3 +1,5 @@
+BIN_NAME=app
+
 all: init build
 
 .PHONY: init
@@ -26,7 +28,7 @@ build-client:
 .PHONY: build-server
 build-server:
 	@echo "> Building the server binary ..."
-	@rm -rf bin && go build -o bin/app .
+	@rm -rf bin && go build -o bin/${BIN_NAME} .
 
 .PHONY: run
 run:

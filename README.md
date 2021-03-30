@@ -18,10 +18,10 @@ This is a template project to use golang with gin and react as monolith applicat
 2. Node Js v14
 
 ## Getting Started
-1. Clone the repository from bitbucket
+1. Clone the repository from Github
 2. Add `.env` file in root directory of this project
 ```The template for `.env` file can be found at `.env.example`.```
-3. Install backend and frontend dependencies
+3. Install backend and frontend dependencies, use
 ```make init```
 4. Or if you want to install backend dependencies only, use ```make init-server```
 5. And if you want to install frontend dependencies only, use ```make init-client```

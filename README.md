@@ -10,8 +10,7 @@ This is a template project to use golang with gin and react as monolith applicat
 
 ### Frontend
 1. [React](https://reactjs.org/) -> Frontend library
-2. [Rematch](https://github.com/rematch/rematch) -> State management
-3. [Webpack](https://webpack.js.org/) -> Module bundler
+2. [Webpack](https://webpack.js.org/) -> Module bundler
 
 ## Prerequesites
 1. Golang v1.16

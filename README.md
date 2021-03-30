@@ -1,7 +1,7 @@
 # Golang+Gin+React
 
 ## Overview
-This is a template project to use golang with gin and react as monolith application more easier. Don't need to deploy frontend and backend as separate service, gin will serve static content from React either it is on development (with hot reload) or production.
+This is a template project to use golang with gin and react as monolith application easier for Full Stack Developer. Don't need to deploy frontend and backend as separate service, gin will serve static content from React either it is on development (with hot reload) or production.
 
 ## Main Tech Stack
 ### Backend

@@ -36,3 +36,6 @@ Both backend and frontend will served by hot reload, so when change the code and
 1. Build the frontend and backend by ```make build```
 2. Run the build version inside `bin` folder
 ```./bin/app```
+
+## Important Notes
+Use `HashRoutes` from `react-router-dom` to avoid conflicted route between react router and gin router

@@ -37,4 +37,10 @@ Both backend and frontend will served by hot reload, so when change the code and
 ```./bin/app```
 
 ## Important Notes
-Use `HashRoutes` from `react-router-dom` to avoid conflicted route between react router and gin router
+1. Use `HashRoutes` from `react-router-dom` to avoid conflicted route between react router and gin router
+2. To make react can read the ENV value, you need to add that in to `client/config/webpack.config.js`
+```new webpack.DefinePlugin({
+    'process.env.APPLICATION_SERVER': JSON.stringify(process.env.APPLICATION_SERVER),
+    'process.env.APP_ENV': JSON.stringify(process.env.APP_ENV),
+    'process.env.YOUR_ENV_VALUE_TO_BE_READ': JSON.stringify(process.env.YOUR_ENV_VALUE),
+  }),```

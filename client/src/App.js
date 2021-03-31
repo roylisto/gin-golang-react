@@ -18,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        {/* Please read on README.md about ENV */}
+        <p>Your Environment: {process.env.APP_ENV}</p>
       </header>
     </div>
   );

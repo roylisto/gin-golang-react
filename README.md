@@ -30,6 +30,7 @@ Both backend and frontend will served by hot reload, so when change the code and
 1. To run backend only, open new terminal and run ```fresh``` at root folder
 2. To run frontend and backend concurrently, open terminal and run ```make run``` at root folder
 
+It will run on `localhost:3000` for the frontend, and `localhost:3000/api/v1` for the backend, it depends on what port was set in the ENV
 
 ## Staging & Production Build
 1. Build the frontend and backend by ```make build```

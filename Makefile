@@ -1,4 +1,5 @@
 BIN_NAME=app
+export GO111MODULE=on
 
 all: init build
 
@@ -8,7 +9,7 @@ init: init-client init-server
 .PHONY: init-client
 init-client:
 	@echo "> Installing the client dependencies ..."
-	@npm install -D --unsafe-perm
+	@yarn install -D --unsafe-perm
 
 .PHONY: init-server
 init-server:
@@ -23,7 +24,7 @@ build: build-client build-server
 .PHONY: build-client
 build-client:
 	@echo "> Building the client ..."
-	npm run build
+	yarn run build
 
 .PHONY: build-server
 build-server:
@@ -33,4 +34,4 @@ build-server:
 .PHONY: run
 run:
 	@echo "> Running Frontend & Backend ..."
-	./node_modules/.bin/concurrently "npm run dev" "fresh"
+	./node_modules/.bin/concurrently "yarn run dev" "fresh"
